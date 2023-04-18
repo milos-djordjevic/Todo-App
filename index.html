@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="todo">
+      <div class="todo-header">
+        <h1 class="todo-title">Todo</h1>
+      </div>
+      <div class="todo-container">
+        <div class="todo-container-item">
+          <input type="text" placeholder="Enter your task" class="todo-input" />
+          <button class="todo-button">Add</button>
+        </div>
+        <div class="todo-container-item">
+          <button class="primary-button">Add new task</button>
+        </div>
+      </div>
+      <div class="todo-body">
+        <ul class="todo-menu">
+          <div class="divider"></div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-container">
+        <p class="modal-content">Do you want to delete this task?</p>
+      </div>
+      <div class="modal-container">
+        <button class="modal-button modal-button-confirm">Yes</button>
+        <button class="modal-button modal-button-decline">No</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
